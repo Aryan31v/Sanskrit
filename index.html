@@ -366,25 +366,40 @@
                 </section>
 
                 <!-- Concluding Slide -->
+                <style>
+                    @keyframes revealGold {
+                        0% { opacity: 0; transform: translateY(20px); filter: blur(10px); }
+                        100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+                    }
+                    @keyframes scaleIn {
+                        0% { opacity: 0; transform: scale(0.5); }
+                        100% { opacity: 1; transform: scale(1); }
+                    }
+                    @keyframes borderDraw {
+                        0% { width: 0; height: 0; }
+                        100% { width: 50px; height: 50px; }
+                    }
+                </style>
                 <section style="height: 100%; display: flex; align-items: center; justify-content: center;" data-background-color="#050505">
-                    <div style="border: 1px solid rgba(212, 175, 55, 0.3); padding: 5rem; border-radius: 4px; background: rgba(20, 20, 20, 0.8); box-shadow: 0 0 80px rgba(0,0,0,0.9); max-width: 900px; position: relative; overflow: hidden;">
-                        <!-- Decorative corners -->
-                        <div style="position: absolute; top: 0; left: 0; width: 50px; height: 50px; border-top: 2px solid #bf953f; border-left: 2px solid #bf953f;"></div>
-                        <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; border-top: 2px solid #bf953f; border-right: 2px solid #bf953f;"></div>
-                        <div style="position: absolute; bottom: 0; left: 0; width: 50px; height: 50px; border-bottom: 2px solid #bf953f; border-left: 2px solid #bf953f;"></div>
-                        <div style="position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; border-bottom: 2px solid #bf953f; border-right: 2px solid #bf953f;"></div>
-
-                        <h1 style="font-size: 6em; margin: 0; color: #bf953f; background: -webkit-linear-gradient(#fbf5b7, #bf953f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 15px rgba(191, 149, 63, 0.2)); line-height: 1.2;">धन्यवादः</h1>
+                    <div style="border: 1px solid rgba(212, 175, 55, 0.2); padding: 5rem; border-radius: 4px; background: rgba(20, 20, 20, 0.8); box-shadow: 0 0 80px rgba(0,0,0,0.9); max-width: 900px; position: relative; overflow: hidden; animation: scaleIn 1.2s cubic-bezier(0.16, 1, 0.3, 1);">
                         
-                        <div style="display: flex; align-items: center; justify-content: center; margin: 30px 0;">
+                        <!-- Animated corners -->
+                        <div style="position: absolute; top: 0; left: 0; width: 50px; height: 50px; border-top: 2px solid #bf953f; border-left: 2px solid #bf953f; animation: borderDraw 0.8s forwards 0.5s;"></div>
+                        <div style="position: absolute; top: 0; right: 0; width: 50px; height: 50px; border-top: 2px solid #bf953f; border-right: 2px solid #bf953f; animation: borderDraw 0.8s forwards 0.5s;"></div>
+                        <div style="position: absolute; bottom: 0; left: 0; width: 50px; height: 50px; border-bottom: 2px solid #bf953f; border-left: 2px solid #bf953f; animation: borderDraw 0.8s forwards 0.5s;"></div>
+                        <div style="position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; border-bottom: 2px solid #bf953f; border-right: 2px solid #bf953f; animation: borderDraw 0.8s forwards 0.5s;"></div>
+
+                        <h1 style="font-size: 6em; margin: 0; color: #bf953f; background: -webkit-linear-gradient(#fbf5b7, #bf953f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 15px rgba(191, 149, 63, 0.2)); line-height: 1.2; animation: revealGold 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;">धन्यवादः</h1>
+                        
+                        <div style="display: flex; align-items: center; justify-content: center; margin: 30px 0; opacity: 0; animation: revealGold 1s forwards 0.8s;">
                             <span style="height: 1px; width: 80px; background: linear-gradient(90deg, transparent, #bf953f);"></span>
                             <span style="margin: 0 20px; color: #bf953f; font-size: 1.5em; opacity: 0.8;">❖</span>
                             <span style="height: 1px; width: 80px; background: linear-gradient(-90deg, transparent, #bf953f);"></span>
                         </div>
                         
-                        <p style="font-family: 'Cinzel', serif; font-size: 2.2em; color: #e0e0e0; letter-spacing: 0.25em; margin: 0; text-transform: uppercase; font-weight: 300;">Dhanyavādaḥ</p>
+                        <p style="font-family: 'Cinzel', serif; font-size: 2.2em; color: #e0e0e0; letter-spacing: 0.25em; margin: 0; text-transform: uppercase; font-weight: 300; opacity: 0; animation: revealGold 1.2s forwards 1.2s;">Dhanyavādaḥ</p>
                         
-                        <div style="margin-top: 50px; font-size: 4em; filter: drop-shadow(0 0 10px rgba(255,255,255,0.1)); opacity: 0.9;">
+                        <div style="margin-top: 50px; font-size: 4em; filter: drop-shadow(0 0 10px rgba(255,255,255,0.1)); opacity: 0; animation: scaleIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards 1.6s;">
                             🙏
                         </div>
                     </div>
